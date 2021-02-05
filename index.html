@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Painting app</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<script src="https://kit.fontawesome.com/fb647af2cd.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="characters">
+			<img onClick="change_image(this)" src="characters/Emily.png" alt="Emily" id="emily" class="img">
+			<img onClick="change_image(this)" src="characters/KingNahab.png" alt="KingNahab" id="kingNahab" class="img">
+			<img onClick="change_image(this)" src="characters/Koot.png" alt="Koot" id="koot" class="img">
+			<img onClick="change_image(this)" src="characters/Marsala.png" alt="Marsala" id="marsala" class="img">
+			<img onClick="change_image(this)" src="characters/Muddy.png" alt="Muddy" id="muddy" class="img">
+			<img onClick="change_image(this)" src="characters/PrinceAli.png" alt="Prince Ali" id="priceAli" class="img">
+			<img onClick="change_image(this)" src="characters/PrinceSaladam.png" alt="Prince Saladam" id="princeSaladam" class="img">
+			<img onClick="change_image(this)" src="characters/Sasha.png" alt="Sasha" id="sasha" class="img">
+			<img onClick="change_image(this)" src="characters/TutTut.png" alt="Tut Tut" id="tutTut" class="img">
+			<img onClick="change_image(this)" src="characters/SargentRomali.png" alt="Sargent Romali" id="sargentRomali" class="img">
+			<img onClick="change_image(this)" src="characters/MrMopsy.png" alt="Mr Mopsy" id="mrMopsy" class="img">
+			<img onClick="change_image(this)" src="characters/QueenFala.png" alt="Queen Fala" id="queenFala" class="img">
+			<img onClick="change_image(this)" src="https://upload.wikimedia.org/wikipedia/commons/4/41/Simple_Seal_of_Baphomet.svg" alt="" class="img">
+		</div>
+		<div class="field">
+			<canvas id="canvas"></canvas>
+			<div class="tools">
+				<i class="fas fa-paint-brush" id="brush-icon"></i>
+
+				<div class="color-palette">
+					<div onClick="change_color(this)" class="color-field" style="background: #e9e640"></div>
+					<div onClick="change_color(this)" class="color-field" style="background: #edaa3f"></div>
+					<div onClick="change_color(this)" class="color-field" style="background: #f38e3a"></div>
+					<div onClick="change_color(this)" class="color-field" style="background: #e86b3b"></div>
+					<div onClick="change_color(this)" class="color-field" style="background: #f5c7ad"></div>
+					<div onClick="change_color(this)" class="color-field" style="background: #e2a078"></div>
+					<div onClick="change_color(this)" class="color-field" style="background: #ce8775"></div>
+					<div onClick="change_color(this)" class="color-field" style="background: #bc6e58"></div>
+					<div onClick="change_color(this)" class="color-field" style="background: #ebbbb0"></div>
+					<div onClick="change_color(this)" class="color-field" style="background: #f69b9c"></div>
+					<div onClick="change_color(this)" class="color-field" style="background: #833b3f"></div>
+					<div onClick="change_color(this)" class="color-field" style="background: #6f3d25"></div>
+					<div onClick="change_color(this)" class="color-field" style="background: #47290a"></div>
+					<div onClick="change_color(this)" class="color-field" style="background: #aebbde"></div>
+					<div onClick="change_color(this)" class="color-field" style="background: #54c5d9"></div>
+					<div onClick="change_color(this)" class="color-field" style="background: #1aaaa1"></div>
+					<div onClick="change_color(this)" class="color-field" style="background: #1495b2"></div>
+					<div onClick="change_color(this)" class="color-field" style="background: #06a96a"></div>
+					<div onClick="change_color(this)" class="color-field" style="background: #1a56a7"></div>
+					<div onClick="change_color(this)" class="color-field" style="background: #de2087"></div>
+					<div onClick="change_color(this)" class="color-field" style="background: #594399"></div>
+					<div onClick="change_color(this)" class="color-field" style="background: #ffffff"></div>
+					<div onClick="change_color(this)" class="color-field" style="background: #9ba1a7"></div>
+					<div onClick="change_color(this)" class="color-field" style="background: #000000"></div>
+				</div>
+
+				<input onInput="draw_color = this.value; 
+								let brush = document.getElementById('brush-icon');
+								brush.style.color = draw_color;" 
+					   type="color" 
+					   class="color-picker">
+				<input type="range" min="1" max="100" value="1" class="pen-range"
+					   onInput="draw_width = this.value">
+
+				<button onClick="clear_canvas()" type="button" class="button">Clear</button>
+				<button onClick="Save()" type="button" class="button">Save</button>
+			</div>
+		</div>
+
+
+		<script src="main.js"></script>
+	</body>
+</html>

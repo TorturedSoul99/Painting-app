@@ -1,0 +1,113 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+}
+
+
+canvas {
+	box-shadow: -3px 2px 9px 6px #000000;
+	cursor: pointer;
+	height: 400px;
+	width: 400px;
+	margin-left: 50px;
+	position: relative;
+	align-self: center;
+}
+
+.img {
+	position: relative;
+	height: 100px;
+	width: 100px;
+	cursor: pointer;
+}
+
+#brush-icon {
+	display: block;
+	align-self: center;
+	font-size: 3em;
+	padding: 5%;
+	border: 1px solid #AAAAAA;
+	border-radius: 20%;
+	margin-bottom: 20%;
+	box-shadow: inset 2px 2px #AAAAAA;
+}
+
+.characters {
+	height: 100vh;
+	width: 50vw;
+	background: linear-gradient(0deg, rgba(23,237,253,1) 0%, rgba(255,255,255,1) 70%);
+}
+
+.field {
+	display: flex;
+	flex-direction: row;
+}
+
+.tools {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 15px;
+}
+
+
+.tools .color-field {
+	height: 40px;
+	width: 40px;
+	min-height: 40px;
+	min-width: 40px;
+	cursor: pointer;
+	display: inline-block;
+	box-sizing: border-box;
+	border-radius: 50%;
+	align-self: center;
+	margin: 0 10px;
+	box-shadow: inset -1px -1px 2px #FFFFFF, 2px 2px 4px #000000;
+	margin: 2%;
+}
+
+.tools .button {
+	align-self: center;
+	width: 100px;
+	height: 40px;
+	border: 2px solid #FFFFFF;
+	cursor: pointer;
+	color: #FFFFFF;
+	background: #222;
+	font-weight: bold;
+	margin: auto;
+}
+
+.color-picker {
+	align-self: center;
+	margin: auto;
+	height: 50px;
+}
+
+.pen-range {
+	align-self: center;
+	margin: auto;
+}
+
+.color-palette {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	padding: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
